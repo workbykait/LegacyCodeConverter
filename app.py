@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 # OpenRouter API setup
-API_KEY = st.secrets["OPENROUTER_API_KEY"]
+API_KEY = "OPENROUTER_API_KEY"
 URL = "https://openrouter.ai/api/v1/chat/completions"
 HEADERS = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
 def convert_code(legacy_code, language):
